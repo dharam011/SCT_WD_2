@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: GILROY;
+  }
+  
+  body {
+    
+    background-color: #000000;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+   
+    height: 100%;
+    margin-top: 5vw;
+  }
+  
+  .stopwatch-container {
+    height: 100%;
+    text-align: center;
+    background-color: #0a0a0a;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  }
+  h1{
+    margin-bottom: 3.2vw;
+    font-size: 3vw;
+  }
+  
+  .display {
+    font-size: 35px;
+    margin-bottom: 20px;
+   border: 10px solid orange;
+   
+    padding: 20px;
+    border-radius:50%;
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.416);
+  }
+  #startPauseBtn i{
+    font-size: 2.5vh;
+  }
+  
+  button:hover {
+    background-color: #3498db;
+    color: black;
+  }
+  
+  button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .laps-list {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    
+      
+  }
+  .laps-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .laps-list li {
+    background-color: #3498db;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 50px;
+    color: black;
+  }
+  
